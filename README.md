@@ -1,7 +1,7 @@
 # AccLibrary
 Simple Libraries for Acc
 
-# Registration Form Validation
+# Form Validations
 
 gradle:
 
@@ -14,10 +14,15 @@ Set length of password
 ```groovy
 FieldValidation.setPasswordLength(10);
 ```
-Validation
+Registration Form Validation
 ```groovy
 if(FieldValidation.validateFields(context, _email, _phone, _password, _confPass)){
     //do something on success
  }
 ```
-
+Login Form Registration
+```groovy
+if(FieldValidation.validateLFields(context, _email, _password)){
+    //do something on success
+}
+```
