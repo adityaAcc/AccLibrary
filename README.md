@@ -3,6 +3,15 @@ Simple Libraries for Acc
 
 # Form Validations
 
+Add this to your root build.gradle
+```groovy
+allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+```
 gradle:
 
 ```groovy
