@@ -12,7 +12,7 @@ Usage:
 
 ```groovy
 if(FieldValidation.validateFields(Register.this, _email, _phone, _password, _confPass)){
-                        Toast.makeText(Register.this,"Successfully Registered.",Toast.LENGTH_SHORT).show();
-                    }
+    Toast.makeText(Register.this,"Successfully Registered.",Toast.LENGTH_SHORT).show();
+ }
 ```
 
