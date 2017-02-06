@@ -6,7 +6,7 @@ Simple Libraries for Acc
 gradle:
 
 ```groovy
-compile 'com.github.adityaAcc:AccLibrary:3e12e79875'
+compile 'com.github.adityaAcc:AccLibrary:e89f1fecb1'
 ```
 Usage:
 
