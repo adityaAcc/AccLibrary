@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AccLibrary.iml" filepath="$PROJECT_DIR$/AccLibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apilibrary/apilibrary.iml" filepath="$PROJECT_DIR$/apilibrary/apilibrary.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/userlibrary/userlibrary.iml" filepath="$PROJECT_DIR$/userlibrary/userlibrary.iml" />
     </modules>
