@@ -12,14 +12,14 @@ import java.util.regex.Pattern;
 
 public class FieldValidation {
 
-    static int  passwordLenght = 8;
+    public static int  passwordLenght = 8;
 
     public static void setPasswordLength(int length){
         passwordLenght = length;
     }
 
 
-    public static boolean validateFields(Activity context, String email, String phone, String password, String conf_password){
+    public static boolean validateRFields(Activity context, String email, String phone, String password, String conf_password){
 
         if(email.equals("") || phone.equals("") || password.equals("") || conf_password.equals("")){
             Toast.makeText(context,"Please enter the complete details.",Toast.LENGTH_SHORT).show();
@@ -32,6 +32,18 @@ public class FieldValidation {
         } else if(!password.toString().equals(conf_password.toString())){
             Toast.makeText(context,"Your passwords do not match.",Toast.LENGTH_SHORT).show();
         } else {
+            return true;
+        }
+
+        return false;
+    }
+
+    public static boolean validateLFields(Activity context, String email, String password){
+        if(email.equals("") || password.equals("")){
+            Toast.makeText(context,"Please enter the complete details.",Toast.LENGTH_SHORT).show();
+        } else if (isEmailValid(email.toString()) == false){
+            Toast.makeText(context,"Please enter valid email address.",Toast.LENGTH_SHORT).show();
+        }  else {
             return true;
         }
 
